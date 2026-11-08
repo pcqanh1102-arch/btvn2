@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá Đà Lạt</title>
+</head>
+<body>
+    <header>
+        <h2>Khám phá Đà Lạt</h2>
+        <nav>
+            <a href="#gioithieu">Giới thiệu</a> |
+            <a href="#media">Hình ảnh và video</a> |
+            <a href="#dangky">Đăng ký chuyến đi</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gioithieu">
+            <h2>Chào mừng đến với Đà Lạt</h2>
+            <p>Đà Lạt là thành phố nổi tiếng với khí hậu mát mẻ, những rừng thông xanh,
+            hồ nước thơ mộng và nhiều địa điểm tham quan hấp dẫn.</p>
+            <h3>Địa điểm nổi bật</h3>
+            <ul>
+                <li>Hồ Xuân Hương</li>
+                <li>Thung lũng Tình Yêu</li>
+                <li>Đồi chè Cầu Đất</li>
+                <li>Quảng trường Lâm Viên</li>
+            </ul>
+        </section>
+
+        <section id="media">
+            <h2>Media – Vẻ đẹp Đà Lạt</h2>
+            <h3>Hình ảnh Đà Lạt</h3>
+            <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/hinh_anh_da_lat_523379428a.jpg" alt="Phong cảnh Đà Lạt" width="400">
+            <p>Khung cảnh thiên nhiên thơ mộng của thành phố Đà Lạt.</p>
+
+            <h3>Video giới thiệu</h3>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/-SiENSHAg1c"
+                title="Video giới thiệu du lịch"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section id="dangky">
+            <h2>Đăng ký chuyến đi</h2>
+            <form action="#" method="post">
+                <label for="hoten">Họ và tên:</label>
+                <input type="text" id="hoten" name="hoten" placeholder="Nhập họ và tên" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <br><br>
+
+                <label for="ngaydi">Ngày khởi hành:</label>
+                <input type="date" id="ngaydi" name="ngaydi" required>
+                <br><br>
+
+                <label for="songuoi">Số người tham gia:</label>
+                <input type="number" id="songuoi" name="songuoi" min="1" max="20" value="1" required>
+                <br><br>
+
+                <p>Loại chuyến đi:</p>
+                <input type="radio" id="tudotuc" name="loaitour" value="tudotuc" checked>
+                <label for="tudotuc">Tự túc</label>
+                <input type="radio" id="tour" name="loaitour" value="tour">
+                <label for="tour">Theo tour</label>
+                <br><br>
+
+                <label for="ghichu">Ghi chú:</label>
+                <textarea id="ghichu" name="ghichu" rows="4" cols="40"
+                    placeholder="Nhập yêu cầu thêm (nếu có)"></textarea>
+                <br><br>
+
+                <input type="checkbox" id="dongy" name="dongy" required>
+                <label for="dongy">Tôi đồng ý với thông tin đăng ký.</label>
+                <br><br>
+
+                <input type="submit" value="Gửi đăng ký">
+                <input type="reset" value="Nhập lại">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Website khám phá du lịch Đà Lạt</p>
+        <p>Email: dulichdalat@example.com</p>
+        <nav>
+            <a href="#gioithieu">Quay lại đầu trang</a>
+        </nav>
+    </footer>
+</body>
+</html>
